@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <br>
+     <style>
+    label{
+        color: aliceblue;
+    }
+    </style>
+
+    <div class="container">
+        <form action="{% url 'signup' %}" method="post">
+            {% csrf_token %}
+
+            <div class="page-wrapper bg-dark p-t-100 p-b-50">
+                <div class="wrapper wrapper--w900">
+                <div class="card-body">
+
+                <h1 align="center" style="color: aliceblue">Signup</h1>
+                    <hr>
+                    <p align="center" style="color: red">{{ error }}</p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label for="exampleInputEmail1">User Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="User Name" required autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email" required >
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="exampleInputPassword1">Conform Password</label>
+                                <input type="password" class="form-control" name="cpassword" placeholder="Conform Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="panel-footer" style="color: aliceblue">
+                                    Already have an account? <a href="{% url 'login' %}">Click here</a> to log in.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br>
+                                <input class="btn btn-primary" type="submit" value="SignUp">
+                            </td>
+                        </tr>
+                    </table><br>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+{% endblock content %}

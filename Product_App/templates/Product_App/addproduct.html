@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title %}ADD Product{% endblock %}
+{% block content %}
+    <style>
+        label,h4{color: aliceblue;}
+    </style>
+<div class="container">
+<form action="/create/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card-body">
+                <h1 align="center" style="color: aliceblue">Add Product</h1>
+                 <hr>
+                 <p align="center" style="color: red">{{ error }}</p>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <label >Title</label>
+                            <input type="text" class="form-control"  name="title" placeholder="Product Title" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br>
+                            <select name="" id="">
+                                {% for product in products %}
+                                    <option value="">{{ product.category }}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Description</label>
+                            <input type="text" class="form-control" name="description" placeholder="Description" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Upload Photos</label>
+                            <input type="file" class="form-control" name="image" required>
+                        </td>
+                    </tr>
+
+{#                    Contact Details#}
+
+                    <tr>
+                        <td>
+                            <br>
+                            <h4>Your Contact Details</h4>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="Name" placeholder="Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone No</label>
+                            <input type="number" class="form-control" name="Phone No" placeholder="Phone No" required>
+                        </td>
+                    </tr>
+                    <td><br>
+                        <select name="city" id="">
+                            {% for product in products %}
+                                <option value="">{{ product.state }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><br>
+                            <select name="city" id="">
+                                {% for product in products %}
+                                    <option value="">{{ product.city }}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Enter a location(nearby)</label>
+                            <input type="text" class="form-control" name="location" placeholder="location" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><br>
+                            <input class="btn btn-primary" type="submit" value="Add">
+                        </td>
+                    </tr>
+                </table><br>
+            </div>
+        </div>
+    </div>
+</form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

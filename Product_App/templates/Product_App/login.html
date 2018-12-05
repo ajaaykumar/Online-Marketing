@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{#title#}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <style>
+         {#body {#}
+         {#    height: 100%;#}
+         {#    width: 100%;#}
+         {#    position: absolute;#}
+         {#}#}
+         label {
+             color: aliceblue;
+         }
+    </style>
+    <br>
+    <div class="container" style=" width: 60%; padding: 10px; box-shadow: 1px 1px 6px #a0a0a0;">
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+
+            <div class="page-wrapper bg-dark p-t-100 p-b-50">
+                <div class="wrapper wrapper--w900">
+                <div class="card-body">
+
+                <h1 align="center" style="color: aliceblue">Login</h1>
+                    <hr>
+                    <p align="center" style="color: red">{{ error }}</p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label for="exampleInputEmail1">User Name</label>
+                                <input type="text" class="form-control" name="Email"   placeholder="User Name" required autofocus>
+                                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="panel-footer" style="color: aliceblue">
+                                    Create an account? <a href="{% url 'signup' %}">Click here</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br>
+                                <input class="btn btn-primary" type="submit" value="Login">
+                            </td>
+                        </tr>
+                    </table><br>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %} display {% endblock %}
+{% block content %}
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="page-header">
+						<h1>{{ product.title }}</h1>
+                        <br>
+
+{#                        for place and time#}
+
+                        <div class="row">
+                            <div class="col-4">
+                                <h6><i class="fas fa-map-marker-alt"></i> {{ product.city }}</h6>
+                            </div>
+                            <div class="col-3 text-right">
+                                <h6><i class="fa fa-clock"></i> {{product.pub_date_pretty }}</h6>
+                            </div>
+                        </div>
+					</div><img class="img-fluid" src="{{ product.image.url }}" alt="Image" height="380" width="400" />
+					<dl>
+                        <dt>
+                            <h6><i class="fa fa-search"></i> Hunted by {{product.hunter.username }}</h6>
+                        </dt>
+                        <dt>
+							Description:
+						</dt>
+						<dd>
+							{{ product.body }}
+						</dd>
+                        <dt>
+							Price:
+						</dt>
+						<dd>
+							{{ product.price }}
+						</dd>
+					</dl>
+
+					<button type="button" class="btn active btn-lg btn-outline-info">
+						Buy
+					</button>
+
+				</div>
+				<div class="col-md-4">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

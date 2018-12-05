@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div>
+    {% if messages %}
+        <ul class="messages">
+            {% for k in messages %}
+                <li style="color: red">{{ k }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">India's Largest Marketplace</h1>
+                <h5>Sab Kuch Bikta Hai</h5>
+
+          <p>The Online Market is a platform for buying and selling services and goods such as electronics,
+              furniture, household goods, cars and bikes, the platform had 11 billion page views,
+              200 million monthly active users, 25 million listings, and 8.5 million transactions per month.</p>
+        </div>
+      </div>
+ 	  <div class="container-fluid">
+	<div class="row">
+        <div class="col-md-3" style="background-color: darkgrey">
+            <h3>Categories</h3>
+            <ul>
+                <li {% if not category %} class="selected" {% endif %} style="list-style-type:none" >
+                    <a href="{% url 'home' %}">All</a>
+                </li>
+                {% for c in categories %}
+                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >
+                        <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            {% for product in products %}
+                <div class="page-header">
+                    <div onclick="window.location='{% url 'display' product.id %}'" style="cursor: pointer">
+                        <h1>
+                            {{ product.title }}
+                        </h1>
+                    </div>
+                </div>
+                <div onclick="window.location='{% url 'display' product.id %}'" style="cursor: pointer">
+                    <img alt="Bootstrap Image Preview" src="{{ product.image.url }}" height="160" width="200" >
+                </div>
+                <p><b>RS {{ product.price }}</b></p>
+                <p>{{ product.summary }}</p>
+
+                <div onclick="window.location='{% url 'display' product.id %}'" style="cursor: pointer">
+                    <input class="btn btn-primary" type="submit" value="buy">
+                </div>
+            {% endfor %}
+		</div>
+        <div class="col-md-3">
+        </div>
+    </div>
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+{% endblock %}
