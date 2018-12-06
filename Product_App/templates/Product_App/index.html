@@ -1,16 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div>
-    {% if messages %}
-        <ul class="messages">
-            {% for k in messages %}
-                <li style="color: red">{{ k }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-    </div>
-
     <div class="container-fluid">
         <div class="jumbotron">
             <div class="container">
@@ -25,9 +15,10 @@
  	  <div class="container-fluid">
 	<div class="row">
         <div class="col-md-3" style="background-color: darkgrey">
-            <h3>Categories</h3>
+            <h3><a href="category/">Categories</a></h3>
             <ul>
-                <li {% if not category %} class="selected" {% endif %} style="list-style-type:none" >
+                <li {% if not category %} class="selected"
+                    {% endif %} style="list-style-type:none" >
                     <a href="{% url 'home' %}">All</a>
                 </li>
                 {% for c in categories %}

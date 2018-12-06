@@ -1,4 +1,4 @@
-"""Online_Marketing URL Configuration
+"""online_Marketing URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -16,18 +16,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-from Online_Marketing import settings
+from online_Marketing import settings
 from Product_App import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.showindex, name='home'),
-    path('results/', views.search, name='results'),
-    path('<str:category_slug>', views.showindex, name='product_list_by_category'),
+    path('category/', views.showcategory, name='category'),
+    path('<str:category_slug>', views.showcategory, name='product_list_by_category'),
     path('signup/', views.Signup, name='signup'),
     path('login/', views.Login, name='login'),
     path('logout/', views.Logout, name='logout'),
-    path('create/', views.AddProduct, name='create'),
     path('<int:product_id>/', views.DisplayDetails, name='display'),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('createnew/', views.createNewProduct, name='createnew'),
+
+    path('create/', views.saveProduct, name='create'),
+
+    # path('results/', views.search, name='results'),
+    # path('getcityfromstate/', views.getcityfromstate, name='getcityfromstate')
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+#category--->1
+#states--->1000
+#citys---> 10000

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}ADD Product{% endblock %}
 {% block content %}
+    {% load staticfiles %}
     <style>
         label,h4{color: aliceblue;}
     </style>
@@ -23,9 +24,9 @@
                     </tr>
                     <tr>
                         <td><br>
-                            <select name="" id="">
-                                {% for product in products %}
-                                    <option value="">{{ product.category }}</option>
+                            <select name="category" onselect="true">
+                                {% for category in categorys %}
+                                    <option>{{ category }}</option>
                                 {% endfor %}
                             </select>
                         </td>
@@ -42,6 +43,12 @@
                             <input type="file" class="form-control" name="image" required>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <label>Price</label>
+                            <input type="number" class="form-control" name="price" placeholder="Price" required>
+                        </td>
+                    </tr>
 
 {#                    Contact Details#}
 
@@ -55,30 +62,34 @@
                     <tr>
                         <td>
                             <label>Name</label>
-                            <input type="text" class="form-control" name="Name" placeholder="Name" required>
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Phone No</label>
-                            <input type="number" class="form-control" name="Phone No" placeholder="Phone No" required>
+                            <input type="number" class="form-control" name="phone_no" placeholder="Phone No" required>
                         </td>
                     </tr>
                     <td><br>
-                        <select name="city" id="">
-                            {% for product in products %}
-                                <option value="">{{ product.state }}</option>
+                        <select name="state" onchange="check()" onselect="true" id="statename">
+                            {% if key == 'statename' %}
+                                {{ states }}
+                            {%  endif %}
+
+                            {% for state in states %}
+                                <option>{{ state }}</option>
                             {% endfor %}
                         </select>
                     </td>
                     </tr>
                     <tr>
                         <td><br>
-                            <select name="city" id="">
-                                {% for product in products %}
-                                    <option value="">{{ product.city }}</option>
+                            <select name="city" onselect="true">
+                                {% for city in citys %}
+                                    <option>{{ city }}</option>
                                 {% endfor %}
-                            </select>
+                        </select>
                         </td>
                     </tr>
 
@@ -100,7 +111,6 @@
     </div>
 </form>
     </div>
-    <br>
     <br>
     <br>
     <br>

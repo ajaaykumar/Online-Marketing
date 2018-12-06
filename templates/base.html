@@ -32,7 +32,7 @@
               <span class="navbar-toggler-icon"></span>
           </button>
 {#           search bar #}
-          <form class="form-inline" action="{% url 'results' %}" method="get">
+          <form class="form-inline" action="" method="get">
               {% csrf_token %}
               <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q" value="{{ request.GET.q }}" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -41,7 +41,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                   {% if user.is_authenticated %}
-                      <a class="nav-item nav-link" href="{% url 'create' %}"><i class="fa fa-plus"></i> </a>
+                      <a class="nav-item nav-link" href="{% url 'createnew' %}"><i class="fa fa-plus"></i> </a>
                       <a class="nav-item nav-link" href="javascript:{document.getElementById('logout').submit()}">Logout</a>
                       <form id="logout" action="{% url 'logout' %}" method="post">
                           {% csrf_token %}

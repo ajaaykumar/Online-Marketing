@@ -4,12 +4,14 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class State(models.Model):
-    sname = models.CharField(max_length=50, primary_key=True)
+    idno = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.sname
+        return self.name
 
 class City(models.Model):
+    idno = models.IntegerField(primary_key=True)
     state_name = models.ForeignKey(State, on_delete=models.CASCADE)
     city_name = models.CharField(max_length=50)
 
@@ -17,6 +19,7 @@ class City(models.Model):
         return self.city_name
 
 class Category(models.Model):
+    idno = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True)
 
