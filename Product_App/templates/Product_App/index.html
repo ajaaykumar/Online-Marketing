@@ -15,14 +15,15 @@
  	  <div class="container-fluid">
 	<div class="row">
         <div class="col-md-3" style="background-color: darkgrey">
-            <h3><a href="category/">Categories</a></h3>
+            <h3><a href="{% url 'category' %}">Categories</a></h3>
             <ul>
                 <li {% if not category %} class="selected"
                     {% endif %} style="list-style-type:none" >
                     <a href="{% url 'home' %}">All</a>
                 </li>
                 {% for c in categories %}
-                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >
+{#                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >#}
+                    <li style="list-style-type:none" >
                         <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
                     </li>
                 {% endfor %}

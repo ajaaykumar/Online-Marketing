@@ -53,21 +53,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="168" />
+          <entry key="html" value="182" />
           <entry key="js" value="7" />
-          <entry key="py" value="1459" />
+          <entry key="py" value="1477" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="168" />
+          <entry key="HTML" value="182" />
           <entry key="JavaScript" value="7" />
-          <entry key="Python" value="1459" />
+          <entry key="Python" value="1477" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="auth_user" value="1" />
+          <entry key="auth_user" value="2" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="8" />
@@ -80,7 +80,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="3" />
+          <entry key="Database Element" value="4" />
           <entry key="HTML" value="8" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="3" />
@@ -104,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/online_Marketing/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            <state relative-caret-position="229">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="19" />
               <folding>
                 <element signature="e#640#672#0" expanded="true" />
               </folding>
@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Product_App/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3192">
-              <caret line="133" column="56" lean-forward="true" selection-start-line="133" selection-start-column="56" selection-end-line="133" selection-end-column="56" />
+            <state relative-caret-position="381">
+              <caret line="132" column="60" lean-forward="true" selection-start-line="132" selection-start-column="60" selection-end-line="132" selection-end-column="60" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -126,19 +126,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/product_app_product">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
-              <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -158,11 +149,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="644">
+              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
               <folding>
                 <element signature="e#712#746#0#HTML" expanded="true" />
-                <element signature="e#912#940#0#HTML" expanded="true" />
+                <element signature="e#923#951#0#HTML" expanded="true" />
+                <element signature="e#1292#1320#0#HTML" expanded="true" />
+                <element signature="e#1543#1566#0#HTML" expanded="true" />
+                <element signature="e#1805#1828#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,12 +179,12 @@
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/login.html" />
         <option value="$PROJECT_DIR$/online_Marketing/settings.py" />
         <option value="$PROJECT_DIR$/Product_App/admin.py" />
-        <option value="$PROJECT_DIR$/Product_App/templates/Product_App/index.html" />
-        <option value="$PROJECT_DIR$/online_Marketing/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html" />
         <option value="$PROJECT_DIR$/online_Marketing/static/javascript/validation.js" />
         <option value="$PROJECT_DIR$/Product_App/models.py" />
+        <option value="$PROJECT_DIR$/Product_App/templates/Product_App/index.html" />
+        <option value="$PROJECT_DIR$/online_Marketing/urls.py" />
         <option value="$PROJECT_DIR$/Product_App/views.py" />
       </list>
     </option>
@@ -201,11 +195,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
-    <option name="y" value="7" />
-    <option name="width" value="1246" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="42" />
+    <option name="width" value="1328" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -218,17 +211,6 @@
             <path>
               <item name="online_Marketing" type="b2602c69:ProjectViewProjectNode" />
               <item name="online_Marketing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="online_Marketing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online_Marketing" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="online_Marketing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online_Marketing" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,15 +287,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.03442623" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07704918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,7 +310,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.15733737" />
+      <window_info anchor="right" id="Database" order="4" weight="0.21558245" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -428,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -446,6 +420,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/media/images/daniel-burka-104041-unsplash.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/product_app_product">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -453,10 +430,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
+    <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="644">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="e#712#746#0#HTML" expanded="true" />
+            <element signature="e#923#951#0#HTML" expanded="true" />
+            <element signature="e#1292#1320#0#HTML" expanded="true" />
+            <element signature="e#1543#1566#0#HTML" expanded="true" />
+            <element signature="e#1805#1828#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -470,24 +461,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/images/daniel-burka-104041-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
+    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="e#712#746#0#HTML" expanded="true" />
-            <element signature="e#912#940#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/online_Marketing/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="229">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="19" />
           <folding>
             <element signature="e#640#672#0" expanded="true" />
           </folding>
@@ -496,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Product_App/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3192">
-          <caret line="133" column="56" lean-forward="true" selection-start-line="133" selection-start-column="56" selection-end-line="133" selection-end-column="56" />
+        <state relative-caret-position="381">
+          <caret line="132" column="60" lean-forward="true" selection-start-line="132" selection-start-column="60" selection-end-line="132" selection-end-column="60" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

@@ -28,13 +28,9 @@ urlpatterns = [
     path('login/', views.Login, name='login'),
     path('logout/', views.Logout, name='logout'),
     path('<int:product_id>/', views.DisplayDetails, name='display'),
-
     path('createnew/', views.createNewProduct, name='createnew'),
-
     path('create/', views.saveProduct, name='create'),
-
     # path('results/', views.search, name='results'),
-    # path('getcityfromstate/', views.getcityfromstate, name='getcityfromstate')
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #category--->1

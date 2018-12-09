@@ -122,16 +122,15 @@ def saveProduct(request):
             for z in cit:
                 cidno = z['idno']
 
-            product = Product(title=title, category=Category.objects.get(idno=idno),
-                              body=description,
-                              price=price, name=name,
+            product = Product(title=title, body=description, price=price, name=name,phoneno=phone_no, plocation=location,
+                              category=Category.objects.get(idno=idno),
                               state=State.objects.get(idno=sidno),
-                              city=City.objects.get(idno=cidno),
-                              phoneno=phone_no, plocation=location)
+                              city=City.objects.get(idno=cidno),)
             product.image = request.FILES['image']
             product.hunter = request.user
             product.save()
-            return redirect('create/' + str(product.id))
+
+            return redirect('/createnew/' + str(product.id))
     else:
         return render(request, 'Product_App/addproduct.html',)
 
