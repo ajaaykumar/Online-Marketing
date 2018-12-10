@@ -129,8 +129,11 @@ def saveProduct(request):
             product.image = request.FILES['image']
             product.hunter = request.user
             product.save()
-
-            return redirect('/createnew/' + str(product.id))
+            return redirect('/' + str(product.id))
     else:
         return render(request, 'Product_App/addproduct.html',)
 
+@login_required(login_url='/login/')
+def profilepage(request):
+    user = User.objects.all()
+    return render(request, 'Product_App/Profile.html', {'user': user})

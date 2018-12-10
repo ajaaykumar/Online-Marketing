@@ -30,6 +30,7 @@ urlpatterns = [
     path('<int:product_id>/', views.DisplayDetails, name='display'),
     path('createnew/', views.createNewProduct, name='createnew'),
     path('create/', views.saveProduct, name='create'),
+    path('profile/', views.profilepage, name='profile'),
     # path('results/', views.search, name='results'),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

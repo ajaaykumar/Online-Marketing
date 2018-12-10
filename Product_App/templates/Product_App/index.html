@@ -22,7 +22,7 @@
                     <a href="{% url 'home' %}">All</a>
                 </li>
                 {% for c in categories %}
-{#                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >#}
+                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >
                     <li style="list-style-type:none" >
                         <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
                     </li>
@@ -46,7 +46,7 @@
                 <p>{{ product.summary }}</p>
 
                 <div onclick="window.location='{% url 'display' product.id %}'" style="cursor: pointer">
-                    <input class="btn btn-primary" type="submit" value="buy">
+                    <input class="btn btn-primary" type="submit" value="view">
                 </div>
             {% endfor %}
 		</div>
