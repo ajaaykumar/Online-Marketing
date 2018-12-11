@@ -49,7 +49,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images/', blank=True)
     body = models.TextField(blank=True)
     plocation = models.CharField(max_length=100, default='')
-    phoneno =models.IntegerField()
+    phoneno =models.IntegerField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=10, default='Draft', choices=STATUS_CHOICES)
     created = models.DateTimeField(auto_now_add=True)
@@ -68,3 +68,4 @@ class Product(models.Model):
     def summary(self):
         return self.body[:100]
 
+ # python manage.py migrate --run-syncdb﻿

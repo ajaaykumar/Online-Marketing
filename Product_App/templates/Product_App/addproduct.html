@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td><br>
-                            <select name="category" onselect="true">
+                            <select name="category" onselect="true" required>
                                 {% for category in categorys %}
                                     <option>{{ category }}</option>
                                 {% endfor %}
@@ -62,7 +62,7 @@
                     <tr>
                         <td>
                             <label>Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            <input type="text" class="form-control" name="name" placeholder="Name">
                         </td>
                     </tr>
                     <tr>
@@ -72,7 +72,7 @@
                         </td>
                     </tr>
                     <td><br>
-                        <select name="state" onchange="check()" onselect="true" id="statename">
+                        <select name="state" onchange="check()" onselect="true" id="statename" required>
                             {% if key == 'statename' %}
                                 {{ states }}
                             {%  endif %}
@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <td><br>
-                            <select name="city" onselect="true">
+                            <select name="city" onselect="true" required>
                                 {% for city in citys %}
                                     <option>{{ city }}</option>
                                 {% endfor %}
@@ -96,7 +96,7 @@
                     <tr>
                         <td>
                             <label>Enter a location(nearby)</label>
-                            <input type="text" class="form-control" name="location" placeholder="location" required>
+                            <input type="text" class="form-control" name="location" placeholder="location">
                         </td>
                     </tr>
 

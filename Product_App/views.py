@@ -129,7 +129,8 @@ def saveProduct(request):
             product.image = request.FILES['image']
             product.hunter = request.user
             product.save()
-            return redirect('/' + str(product.id))
+            # return redirect('create/' + str(product.id))
+            return render(request, 'Product_App/index.html/')
     else:
         return render(request, 'Product_App/addproduct.html',)
 
