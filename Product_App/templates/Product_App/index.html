@@ -1,17 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
-    <style>
-        a{
-            text-decoration: none;
-            color: black;
-            text-align: center;
-            padding: 14px 25px;
-            font-size: 25px;
-            display: inline-block;
-        }
 
-    </style>
+{% block content %}
     <div class="container-fluid">
         <div class="jumbotron">
             <div class="container">
@@ -26,16 +16,28 @@
  	  <div class="container-fluid">
 	<div class="row">
         <div class="col-md-3" style="background-color: darkgrey">
-            <h1><a href="{% url 'category' %}">Categories</a></h1>
+            <a href="{% url 'category' %}" style="color: black;
+                                                  text-align: center;
+                                                  padding: 14px 25px;
+                                                  font-size: 25px;
+                                                  display: inline-block;">Categories</a>
         <ul>
-                <li style="list-style-type:none" ><a href="{% url 'home' %}">All</a></li>
-                {% for c in categories %}
-                    <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" >
-                    <li style="list-style-type:none" ><a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
-                    </li>
-                    </li>
-                {% endfor %}
-            </ul>
+            <li style="list-style-type:none" ><a href="{% url 'home' %}" style="color: black;
+                                                                                text-align: center;
+                                                                                padding: 14px 25px;
+                                                                                font-size: 25px;
+                                                                                display: inline-block;">All</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %} class="selected" {% endif %} style="list-style-type:none" ></li>
+                <li style="list-style-type:none" ><a href="{{ c.get_absolute_url }}" style="color: black;
+                                                                                            text-align: center;
+                                                                                            padding: 14px 25px;
+                                                                                            font-size: 25px;
+                                                                                            display: inline-block;">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
         </div>
 
         <div class="col-md-6">
@@ -62,6 +64,7 @@
         </div>
     </div>
       </div>
+    </div>
         <br>
         <br>
         <br>

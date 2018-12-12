@@ -56,39 +56,39 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="333" />
+          <entry key="html" value="489" />
           <entry key="js" value="7" />
-          <entry key="py" value="1639" />
+          <entry key="py" value="1640" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="333" />
+          <entry key="HTML" value="489" />
           <entry key="JavaScript" value="7" />
-          <entry key="Python" value="1639" />
+          <entry key="Python" value="1640" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="auth_user" value="2" />
+          <entry key="auth_user" value="3" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="10" />
+          <entry key="html" value="12" />
           <entry key="jpg" value="1" />
           <entry key="js" value="3" />
           <entry key="product_app_product" value="1" />
           <entry key="product_app_state" value="1" />
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="4" />
-          <entry key="HTML" value="10" />
+          <entry key="Database Element" value="5" />
+          <entry key="HTML" value="12" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -98,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/online_Marketing/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
+            <state relative-caret-position="608">
               <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
             </state>
           </provider>
@@ -119,41 +119,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Product_App/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+            <state relative-caret-position="202">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding>
-                <element signature="e#106#628#0#HTML" />
-                <element signature="e#712#746#0#HTML" expanded="true" />
-                <element signature="e#848#876#0#HTML" expanded="true" />
-                <element signature="e#1047#1075#0#HTML" expanded="true" />
-                <element signature="e#1214#1242#0#HTML" expanded="true" />
-                <element signature="e#1609#1632#0#HTML" expanded="true" />
-                <element signature="e#1871#1894#0#HTML" expanded="true" />
-                <element signature="e#2217#2240#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Product_App/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="34" column="68" lean-forward="true" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,8 +131,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="26" column="77" lean-forward="true" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+            <state relative-caret-position="721">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+              <folding>
+                <element signature="e#120#176#0#HTML" />
+                <element signature="e#662#921#0#HTML" />
+                <element signature="e#942#1328#0#HTML" />
+                <element signature="e#1349#1616#0#HTML" />
+                <element signature="e#1637#1874#0#HTML" />
+                <element signature="e#1924#2120#0#HTML" />
+                <element signature="e#2209#2422#0#HTML" />
+                <element signature="e#2472#2654#0#HTML" />
+                <element signature="e#2730#2935#0#HTML" />
+                <element signature="e#2978#3501#0#HTML" />
+                <element signature="e#3501#3867#0#HTML" />
+                <element signature="e#3889#4154#0#HTML" />
+                <element signature="e#4176#4355#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +157,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="888">
               <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1254">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="19" />
+              <folding>
+                <element signature="e#948#982#0#HTML" expanded="true" />
+                <element signature="e#1037#1081#0#HTML" expanded="true" />
+                <element signature="e#1084#1112#0#HTML" expanded="true" />
+                <element signature="e#1586#1810#0#HTML" expanded="true" />
+                <element signature="e#1282#1310#0#HTML" expanded="true" />
+                <element signature="e#1337#1365#0#HTML" expanded="true" />
+                <element signature="e#1767#1991#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,8 +191,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="368">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#button#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#3434#3523#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -210,14 +221,15 @@
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/login.html" />
         <option value="$PROJECT_DIR$/online_Marketing/settings.py" />
         <option value="$PROJECT_DIR$/Product_App/admin.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/online_Marketing/static/javascript/validation.js" />
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/Profile.html" />
         <option value="$PROJECT_DIR$/online_Marketing/urls.py" />
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/display.html" />
         <option value="$PROJECT_DIR$/Product_App/models.py" />
-        <option value="$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html" />
+        <option value="$PROJECT_DIR$/Product_App/templates/Product_App/signup.html" />
         <option value="$PROJECT_DIR$/Product_App/views.py" />
+        <option value="$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/Product_App/templates/Product_App/index.html" />
       </list>
     </option>
@@ -411,6 +423,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="39" column="76" lean-forward="true" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+          <folding>
+            <element signature="e#1787#1811#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="31" column="85" lean-forward="true" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/images/daniel-burka-104041-unsplash.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -460,24 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1533">
           <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_Marketing/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -495,20 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="26" column="77" lean-forward="true" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Product_App/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -516,6 +496,66 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13230">
+          <caret line="385" column="11" lean-forward="true" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="32" column="79" lean-forward="true" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0d332fd5-b254-4a2b-8b73-746bca8d19f0/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product_App/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/addproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#120#176#0#HTML" />
+            <element signature="e#662#921#0#HTML" />
+            <element signature="e#942#1328#0#HTML" />
+            <element signature="e#1349#1616#0#HTML" />
+            <element signature="e#1637#1874#0#HTML" />
+            <element signature="e#1924#2120#0#HTML" />
+            <element signature="e#2209#2422#0#HTML" />
+            <element signature="e#2472#2654#0#HTML" />
+            <element signature="e#2730#2935#0#HTML" />
+            <element signature="e#2978#3501#0#HTML" />
+            <element signature="e#3501#3867#0#HTML" />
+            <element signature="e#3889#4154#0#HTML" />
+            <element signature="e#4176#4355#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_Marketing/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="80" column="53" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -529,29 +569,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Product_App/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        <state relative-caret-position="368">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#3434#3523#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Product_App/templates/Product_App/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="-1254">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="19" />
           <folding>
-            <element signature="e#106#628#0#HTML" />
-            <element signature="e#712#746#0#HTML" expanded="true" />
-            <element signature="e#848#876#0#HTML" expanded="true" />
-            <element signature="e#1047#1075#0#HTML" expanded="true" />
-            <element signature="e#1214#1242#0#HTML" expanded="true" />
-            <element signature="e#1609#1632#0#HTML" expanded="true" />
-            <element signature="e#1871#1894#0#HTML" expanded="true" />
-            <element signature="e#2217#2240#0#HTML" expanded="true" />
+            <element signature="e#948#982#0#HTML" expanded="true" />
+            <element signature="e#1037#1081#0#HTML" expanded="true" />
+            <element signature="e#1084#1112#0#HTML" expanded="true" />
+            <element signature="e#1586#1810#0#HTML" expanded="true" />
+            <element signature="e#1282#1310#0#HTML" expanded="true" />
+            <element signature="e#1337#1365#0#HTML" expanded="true" />
+            <element signature="e#1767#1991#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

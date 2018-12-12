@@ -35,13 +35,13 @@ def Signup(request):
     if request.method == 'POST':
         if request.POST['password'] == request.POST['cpassword']:
             try:
-                User.objects.get(username=request.POST['Email'])
+                User.objects.get(username=request.POST['username'])
                 return render(request, 'Product_App/signup.html', {'error': 'User Already Exist'})
             except IntegrityError:
                 return render(request, 'Product_App/signup.html', {'error': 'User Already Exist'})
 
             except User.DoesNotExist:
-                user = User.objects.create_user(username=request.POST['username'], email=request.POST['Email'],
+                user = User.objects.create_user(username=request.POST['username'], email=request.POST['email'],
                                                 password=request.POST['cpassword'])
                 auth.login(request, user)
                 return redirect('home')
