@@ -17,6 +17,30 @@
                  <p align="center" style="color: red">{{ error }}</p>
                 <table align="center">
                     <tr>
+                    <td><br>
+                        <label >State</label>
+                        <select name="state" onchange="check()" onselect="true" id="one" class="form-control" required>
+                            {% if key == 'one' %}
+                                {{ states }}
+                            {%  endif %}
+
+                            {% for state in states %}
+                                <option>{{ state }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label >City</label>
+                            <select name="city" onselect="true" class="form-control" required>
+                                {% for city in citys %}
+                                    <option>{{ city }}</option>
+                                {% endfor %}
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>
                             <label >Title</label>
                             <input type="text" class="form-control"  name="title" placeholder="Product Title" required>
@@ -69,29 +93,6 @@
                         <td>
                             <label>Phone No</label>
                             <input type="number" class="form-control" name="phone_no" placeholder="Phone No" required>
-                        </td>
-                    </tr>
-                    <tr>
-                    <td><br>
-                        <select name="state" onchange="check()" onselect="true" id="one" class="form-control" required>
-                            {% if key == 'one' %}
-                                {{ states }}
-                            {%  endif %}
-
-                            {% for state in states %}
-                                <option>{{ state }}</option>
-                            {% endfor %}
-                        </select>
-                    </td>
-                    </tr>
-
-                    <tr>
-                        <td><br>
-                            <select name="city" onselect="true" class="form-control" required>
-                                {% for city in citys %}
-                                    <option>{{ city }}</option>
-                                {% endfor %}
-                        </select>
                         </td>
                     </tr>
 
