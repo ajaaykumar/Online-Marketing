@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td><br>
-                            <select name="category" onselect="true" required>
+                            <select name="category" onselect="true" class="form-control" required>
                                 {% for category in categorys %}
                                     <option>{{ category }}</option>
                                 {% endfor %}
@@ -73,8 +73,8 @@
                     </tr>
                     <tr>
                     <td><br>
-                        <select name="state" onchange="check()" onselect="true" id="statename" required>
-                            {% if key == 'statename' %}
+                        <select name="state" onchange="check()" onselect="true" id="one" class="form-control" required>
+                            {% if key == 'one' %}
                                 {{ states }}
                             {%  endif %}
 
@@ -87,7 +87,7 @@
 
                     <tr>
                         <td><br>
-                            <select name="city" onselect="true" required>
+                            <select name="city" onselect="true" class="form-control" required>
                                 {% for city in citys %}
                                     <option>{{ city }}</option>
                                 {% endfor %}
@@ -116,4 +116,7 @@
     <br>
     <br>
     <br>
+    <script src="{% static 'javascript/validation.js' %}" type="text/javascript">
+        window.stop();
+    </script>
 {% endblock %}

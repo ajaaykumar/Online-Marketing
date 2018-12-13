@@ -20,7 +20,9 @@
                                 <h6><i class="fa fa-clock"></i> {{product.pub_date_pretty }}</h6>
                             </div>
                         </div>
-					</div><img class="img-fluid" src="{{ product.image.url }}" alt="Image" height="380" width="400" />
+					</div>
+                    <a href="{{ product.image.url }}"><img class="img-fluid" src="{{ product.image.url }}" alt="Image" height="380" width="400" />
+                    </a>
 					<dl>
                         <dt>
                             <h6><i class="fa fa-search"></i> Posted by {{product.hunter.username }}</h6>

@@ -82,16 +82,33 @@ def createNewProduct(request):
     for val in cate:
         categorys.append(val['name'])
 
+        # state dropdown
     stname = State.objects.values('name')
-    states = ['--states--']
+    states = ['State']
     for valu in stname:
         states.append(valu['name'])
+    # get city from state
 
-    cname = City.objects.values('city_name')
-    citys = ['--citys--']
-    for val in cname:
-        citys.append(val['city_name'])
-    return render(request, 'Product_App/addproduct.html', {'categorys': categorys, 'states': states, 'citys': citys, "key":"statename"})
+    sel_state = request.GET.get("state")
+    # getting state id no
+    res = State.objects.values('idno').filter(name=sel_state)
+    idno = 0
+    for x in res:
+        idno = x["idno"]
+    # finding city from state id no
+    res1 = City.objects.values('city_name').filter(state_name=idno)
+    citys = ["City"]
+    if not res1:
+        citys = ["No City Available"]
+    else:
+        for x in res1:
+            citys.append(x['city_name'])
+
+    # cname = City.objects.values('city_name')
+    # citys = ['City']
+    # for val in cname:
+    #     citys.append(val['city_name'])
+    return render(request, 'Product_App/addproduct.html', {'categorys': categorys, 'states': states, 'citys': citys, "key":"one"})
 
 
 def saveProduct(request):
